@@ -21,7 +21,7 @@ img {
 }
 body {
   background: url(bgc.41cbd443.jpg) no-repeat center center fixed;
-  background-size: "cover";
+  background-size: cover;
   font-family: "Courier New", Courier, monospace;
 }
 .globalHeader {
