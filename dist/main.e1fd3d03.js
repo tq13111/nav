@@ -188,14 +188,12 @@ window.onbeforeunload = function () {
   var string = JSON.stringify(hashMap);
   localStorage.setItem("x", string);
 }; //懒加载背景图
-
-
-var img = new Image();
-img.src = "./images/bgc.jpg";
-
-img.onload = function (e) {
-  document.body.style.background = "url(./images/bgc.jpg) no-repeat center center fixed ";
-  document.body.style.backgroundSize = 'cover';
-};
+// let img = new Image();
+// img.src = "./images/bgc.jpg";
+// img.onload = (e) => {
+//   document.body.style.background =
+//     "url(./images/bgc.jpg) no-repeat center center fixed ";
+//     document.body.style.backgroundSize= 'cover';
+// };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=https://tq13111.github.io/nav-1/dist/index.html/main.253f1dbe.js.map
+//# sourceMappingURL=main.e1fd3d03.js.map

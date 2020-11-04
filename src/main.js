@@ -74,11 +74,11 @@ window.onbeforeunload = () => {
   localStorage.setItem("x", string);
 };
 //懒加载背景图
-let img = new Image();
-img.src = "./images/bgc.jpg";
-img.onload = (e) => {
-  document.body.style.background =
-    "url(./images/bgc.jpg) no-repeat center center fixed ";
-    document.body.style.backgroundSize= 'cover';
+// let img = new Image();
+// img.src = "./images/bgc.jpg";
+// img.onload = (e) => {
+//   document.body.style.background =
+//     "url(./images/bgc.jpg) no-repeat center center fixed ";
+//     document.body.style.backgroundSize= 'cover';
 
-};
+// };

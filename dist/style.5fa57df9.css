@@ -20,7 +20,8 @@ img {
   max-height: 100%;
 }
 body {
-  /* background: url(./images/bgc.jpg)  no-repeat center center fixed; */
+  background: url(bgc.41cbd443.jpg) no-repeat center center fixed;
+  background-size: "cover";
   font-family: "Courier New", Courier, monospace;
 }
 .globalHeader {
@@ -62,7 +63,7 @@ body {
   width: 100%;
   height: 38px;
   padding: 0 20px;
-  border: 1px solid rgba(0,0,0,0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   font-size: 14px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
@@ -76,7 +77,7 @@ body {
   white-space: nowrap;
   display: block;
   padding: 0 20px;
-  background:black;
+  background: black;
   border: 1px solid black;
   box-shadow: -1px 0px 1px 0px black;
   border-radius: 20px;
@@ -155,7 +156,7 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
   }
   .siteList .site:hover {
-    background-color: rgb(255,255,255,0.6);
+    background-color: rgb(255, 255, 255, 0.6);
   }
 }
 
@@ -216,4 +217,4 @@ body {
 }
 
 
-/*# sourceMappingURL=https://tq13111.github.io/nav-1/dist/index.html/style.ca5580dc.css.map */
+/*# sourceMappingURL=style.5fa57df9.css.map */
