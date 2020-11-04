@@ -122,9 +122,9 @@ var $siteList = $(".siteList");
 var $lastLi = $siteList.find("li.last"); // 绑定添加事件
 
 $(".addButton").on("click", function (e) {
-  var url = window.prompt("请输入想要添加的网址:"); //提示用户进行输入的对话框
+  var url = window.prompt("请输入想要添加的网址:") || ''; //提示用户进行输入的对话框
 
-  if (url && url.indexOf("https://") === -1) {
+  if (url.indexOf("https://") === -1) {
     url = "https://" + url;
   }
 
@@ -196,4 +196,4 @@ window.onbeforeunload = function () {
 //     document.body.style.backgroundSize= 'cover';
 // };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.158f9b3e.js.map
+//# sourceMappingURL=main.8a811ab8.js.map
