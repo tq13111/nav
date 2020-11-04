@@ -183,9 +183,19 @@ $(document).on("keypress", function (e) {
     }
   });
 }); // 跳转时将数据保存到 localStorage
-// window.onbeforeunload = () => {
-//   const string = JSON.stringify(hashMap);
-//   localStorage.setItem("x", string);
-// };
+
+window.onbeforeunload = function () {
+  var string = JSON.stringify(hashMap);
+  localStorage.setItem("x", string);
+}; //懒加载背景图
+
+
+var img = new Image();
+img.src = "./images/bgc.jpg";
+
+img.onload = function (e) {
+  document.body.style.background = "url(./images/bgc.jpg) no-repeat center center fixed ";
+  document.body.style.backgroundSize = 'cover';
+};
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.3005782b.js.map
+//# sourceMappingURL=main.253f1dbe.js.map
