@@ -9,7 +9,7 @@ $(".addButton").on("click", (e) => {
     hashMap.push({
       logo: simplify(url)[0],
       url: url,
-  }
+  })
   render();
 });
 //从 localStorage 获取最新数据
