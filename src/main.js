@@ -2,14 +2,14 @@ const $siteList = $(".siteList");
 const $lastLi = $siteList.find("li.last");
 // 绑定添加事件
 $(".addButton").on("click", (e) => {
-  let url = window.prompt("请输入想要添加的网址:") || ''; //提示用户进行输入的对话框
-  if (url.indexOf("https://") === -1) {
+  let url = window.prompt("请输入想要添加的网址:") ; //提示用户进行输入的对话框
+  if (url && url.indexOf("https://") === -1) {
     url = "https://" + url;
   }
-  hashMap.push({
-    logo: simplify(url)[0],
-    url: url,
-  });
+    hashMap.push({
+      logo: simplify(url)[0],
+      url: url,
+  }
   render();
 });
 //从 localStorage 获取最新数据
@@ -27,6 +27,7 @@ const simplify = (url) => {
   } else if (url === "http://www.ruanyifeng.com/blog/") {
     url = "阮一峰博客";
   }
+  console.log(url)
   return url
     .replace("https://", "")
     .replace("http://", "")
