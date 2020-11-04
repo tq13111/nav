@@ -2,14 +2,14 @@ const $siteList = $(".siteList");
 const $lastLi = $siteList.find("li.last");
 // 绑定添加事件
 $(".addButton").on("click", (e) => {
-  let url = window.prompt("请输入想要添加的网址:"); //提示用户进行输入的对话框
-  if (url.indexOf("https://") === -1) {
+  let url = window.prompt("请输入想要添加的网址:") ; //提示用户进行输入的对话框
+  if (url && url.indexOf("https://") === -1) {
     url = "https://" + url;
   }
-  hashMap.push({
-    logo: simplify(url)[0],
-    url: url,
-  });
+    hashMap.push({
+      logo: simplify(url)[0],
+      url: url,
+  })
   render();
 });
 //从 localStorage 获取最新数据
@@ -69,7 +69,16 @@ $(document).on("keypress", (e) => {
   });
 });
 // 跳转时将数据保存到 localStorage
-// window.onbeforeunload = () => {
-//   const string = JSON.stringify(hashMap);
-//   localStorage.setItem("x", string);
+window.onbeforeunload = () => {
+  const string = JSON.stringify(hashMap);
+  localStorage.setItem("x", string);
+};
+//懒加载背景图
+// let img = new Image();
+// img.src = "./images/bgc.jpg";
+// img.onload = (e) => {
+//   document.body.style.background =
+//     "url(./images/bgc.jpg) no-repeat center center fixed ";
+//     document.body.style.backgroundSize= 'cover';
+
 // };
