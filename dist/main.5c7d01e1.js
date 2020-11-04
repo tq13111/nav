@@ -155,7 +155,6 @@ var simplify = function simplify(url) {
     url = "阮一峰博客";
   }
 
-  console.log(url);
   return url.replace("https://", "").replace("http://", "").replace("www.", "").replace(/\/.*/, "");
 }; //封装渲染函数
 
@@ -197,4 +196,4 @@ window.onbeforeunload = function () {
 //     document.body.style.backgroundSize= 'cover';
 // };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.64b12df4.js.map
+//# sourceMappingURL=main.5c7d01e1.js.map

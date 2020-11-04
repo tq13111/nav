@@ -27,7 +27,6 @@ const simplify = (url) => {
   } else if (url === "http://www.ruanyifeng.com/blog/") {
     url = "阮一峰博客";
   }
-  console.log(url)
   return url
     .replace("https://", "")
     .replace("http://", "")
