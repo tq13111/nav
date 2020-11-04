@@ -69,7 +69,7 @@ $(document).on("keypress", (e) => {
   });
 });
 // 跳转时将数据保存到 localStorage
-// window.onbeforeunload = () => {
-//   const string = JSON.stringify(hashMap);
-//   localStorage.setItem("x", string);
-// };
+window.onbeforeunload = () => {
+  const string = JSON.stringify(hashMap);
+  localStorage.setItem("x", string);
+};
