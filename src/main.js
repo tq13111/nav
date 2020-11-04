@@ -3,7 +3,7 @@ const $lastLi = $siteList.find("li.last");
 // 绑定添加事件
 $(".addButton").on("click", (e) => {
   let url = window.prompt("请输入想要添加的网址:"); //提示用户进行输入的对话框
-  if (url.indexOf("https://") === -1) {
+  if (url&&url.indexOf("https://") === -1) {
     url = "https://" + url;
   }
   hashMap.push({
