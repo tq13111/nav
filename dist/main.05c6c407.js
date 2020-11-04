@@ -128,10 +128,13 @@ $(".addButton").on("click", function (e) {
     url = "https://" + url;
   }
 
-  hashMap.push({
-    logo: simplify(url)[0],
-    url: url
-  });
+  if (url) {
+    hashMap.push({
+      logo: simplify(url)[0],
+      url: url
+    });
+  }
+
   render();
 }); //从 localStorage 获取最新数据
 
@@ -196,4 +199,4 @@ window.onbeforeunload = function () {
 //     document.body.style.backgroundSize= 'cover';
 // };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.5c7d01e1.js.map
+//# sourceMappingURL=main.05c6c407.js.map

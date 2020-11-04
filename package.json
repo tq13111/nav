@@ -1,4 +1,7 @@
 {
+  "script":{
+    "build":"rm -rf dist && parcel build src/indiex.html --no-minify --pubilc-url ./"
+  },
   "devDependencies": {
     "cssnano": "^4.1.10"
   }
