@@ -191,10 +191,10 @@ window.onbeforeunload = function () {
 
 
 var img = new Image();
-img.src = "./images/bgc.jpg";
+img.src = "./bgc.jpg";
 
 img.onload = function (e) {
-  document.body.style.background = "url(./images/bgc.jpg) no-repeat center center fixed ";
+  document.body.style.background = `url(${img.src}) no-repeat center center fixed `;
   document.body.style.backgroundSize = 'cover';
 };
 },{}]},{},["epB2"], null)
