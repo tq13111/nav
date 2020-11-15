@@ -70,6 +70,8 @@ $(document).on("keypress", (e) => {
     }
   });
 });
+//阻止 input 冒泡
+$('input').on('keypress', (e) => { e.stopPropagation() })
 // 跳转时将数据保存到 localStorage
 window.onbeforeunload = () => {
   const string = JSON.stringify(hashMap);
