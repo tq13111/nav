@@ -22,7 +22,7 @@ img {
 body {
   width: 100%;
   height: 100vh;
-  background: url(/bgc.07e1b593.jpg) no-repeat center center fixed;
+  background: url(bgc.60e7f280.jpg) no-repeat center center fixed;
   background-size: cover;
   font-family: "Courier New", Courier, monospace;
 }
@@ -30,7 +30,7 @@ body {
   body {
     min-width: 100vh;
     min-height: 100vh;
-    background: url(/bgc.07e1b593.jpg) no-repeat center center fixed;
+    background: url(bgc.60e7f280.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: "Courier New", Courier, monospace;
   }
@@ -225,7 +225,7 @@ body {
   border-radius: 50%;
 }
 .siteList .addButton .icon {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 60px;
 }
 @media (min-width: 500px) {
@@ -241,7 +241,7 @@ body {
     width: 150px;
   }
   .siteList .addButton:hover {
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.5);
   }
 }
 .siteList .addButton .text {
@@ -251,4 +251,4 @@ body {
 }
 
 
-/*# sourceMappingURL=/style.e308ff8e.css.map */
+/*# sourceMappingURL=style.4b70064b.css.map */
