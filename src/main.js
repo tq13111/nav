@@ -1,4 +1,8 @@
-$('body').hide()
+$("body").hide();
+window.onload = function () {
+  // 淡入淡出
+  $("body").fadeIn(2000);
+};
 $(function () {
   const $siteList = $(".siteList");
   const $lastLi = $siteList.find("li.last");
@@ -8,24 +12,24 @@ $(function () {
     if (url && url.indexOf("https://") === -1) {
       url = "https://" + url;
     }
-    let logo = simplify(url)[0]
-    let img = url + "/favicon.ico"
+    let logo = simplify(url)[0];
+    let img = url + "/favicon.ico";
     let repeat = false;
-    hashMap.forEach((ele)=>{
-      if(url && ele.url === url){
-        repeat = true
-        window.alert("已有该站点，请重新输入。")
+    hashMap.forEach((ele) => {
+      if (url && ele.url === url) {
+        repeat = true;
+        window.alert("已有该站点，请重新输入。");
       }
-    })
-    if(!repeat){
+    });
+    if (!repeat) {
       hashMap.push({
         logo: logo,
         img: img,
-        type:"img",
+        type: "img",
         url: url,
       });
     }
-    
+
     render();
   });
   //从 localStorage 获取最新数据
@@ -105,16 +109,16 @@ $(function () {
           e.preventDefault();
           hashMap.splice(index, 1);
           render();
-        })&&
-  //图片请求失败处理
-        $('img').on("error", (e) => {
-          hashMap[index].type = 'test'
+        }) &&
+        //图片请求失败处理
+        $("img").on("error", (e) => {
+          hashMap[index].type = "test";
           render();
         });
     });
   };
   render();
-  
+
   // 添加键盘跳转事件
   $(document).on("keypress", (e) => {
     console.log(String.fromCharCode(e.charCode));
@@ -134,6 +138,4 @@ $(function () {
   //   const string = JSON.stringify(hashMap);
   //   localStorage.setItem("x", string);
   // };
-  // 淡入淡出
-  $('body').fadeIn(2000)
 });
