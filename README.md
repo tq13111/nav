@@ -4,7 +4,7 @@
 
 ## 点击预览：
 
-[前端导航](https://tq13111.github.io/nav-1/src/index.html)
+[前端导航](https://tq13111.github.io/nav-1/dist/index.html)
 
 
 ## 开发
