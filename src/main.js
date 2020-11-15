@@ -134,5 +134,6 @@ $(function () {
     localStorage.setItem("x", string);
   };
   // 淡入淡出
-  $('body').hide().fadeIn(2000)
+  $('body').hide()
+  window.onload($('body').fadeIn(2000))
 });
