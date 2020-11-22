@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"epB2":[function(require,module,exports) {
-$('.wrapper').hide();
+// $('.wrapper').hide()
 $(function () {
   var $siteList = $(".siteList");
   var $lastLi = $siteList.find("li.last"); // 绑定添加事件
@@ -229,7 +229,7 @@ $(function () {
 }); // 淡入淡出
 
 window.onload = function () {
-  $(".wrapper").fadeIn(3000);
+  $(".wrapper").fadeTo(3000, 1);
 };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.90e8673c.js.map
+//# sourceMappingURL=main.01a04986.js.map

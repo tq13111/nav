@@ -1,4 +1,4 @@
-$('.wrapper').hide()
+// $('.wrapper').hide()
 $(function () {
   const $siteList = $(".siteList");
   const $lastLi = $siteList.find("li.last");
@@ -138,5 +138,5 @@ $(function () {
 });
   // 淡入淡出
 window.onload = function () {
-  $(".wrapper").fadeIn(3000);
+  $(".wrapper").fadeTo(3000,1);
 };
