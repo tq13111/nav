@@ -118,6 +118,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"epB2":[function(require,module,exports) {
+$("body").hide();
+
+window.onload = function () {
+  // 淡入淡出
+  $("body").fadeIn(2000);
+};
+
 $(function () {
   var $siteList = $(".siteList");
   var $lastLi = $siteList.find("li.last"); // 绑定添加事件
@@ -197,8 +204,8 @@ $(function () {
         hashMap.splice(index, 1);
         render();
       }) && //图片请求失败处理
-      $('img').on("error", function (e) {
-        hashMap[index].type = 'test';
+      $("img").on("error", function (e) {
+        hashMap[index].type = "test";
         render();
       });
     });
@@ -220,14 +227,10 @@ $(function () {
   $("input").on("keypress", function (e) {
     e.stopPropagation();
   }); // 跳转时将数据保存到 localStorage
-
-  window.onbeforeunload = function () {
-    var string = JSON.stringify(hashMap);
-    localStorage.setItem("x", string);
-  }; // 淡入淡出
-
-
-  $('body').hide().fadeIn(2000);
+  // window.onbeforeunload = () => {
+  //   const string = JSON.stringify(hashMap);
+  //   localStorage.setItem("x", string);
+  // };
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.12c55540.js.map
+//# sourceMappingURL=main.68194545.js.map
