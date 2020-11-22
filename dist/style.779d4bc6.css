@@ -25,14 +25,12 @@ img {
   background: url(bgc.60e7f280.jpg) no-repeat center center fixed;
   background-size: cover;
   font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
 }
 @media (mix-width: 500px) {
   .wrapper {
     min-width: 100vh;
     min-height: 100vh;
-    background: url(bgc.60e7f280.jpg) no-repeat center center fixed;
-    background-size: cover;
-    font-family: "Courier New", Courier, monospace;
   }
 }
 .globalHeader {
@@ -251,4 +249,4 @@ img {
 }
 
 
-/*# sourceMappingURL=style.8cf2ab78.css.map */
+/*# sourceMappingURL=style.779d4bc6.css.map */

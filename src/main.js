@@ -130,12 +130,12 @@ $(function () {
     e.stopPropagation();
   });
   // 跳转时将数据保存到 localStorage
-  // window.onbeforeunload = () => {
-  //   const string = JSON.stringify(hashMap);
-  //   localStorage.setItem("x", string);
-  // };
+  window.onbeforeunload = () => {
+    const string = JSON.stringify(hashMap);
+    localStorage.setItem("x", string);
+  };
 });
 window.onload = function () {
   // 淡入淡出
-  $("body").fadeIn(2000);
+  $("body").fadeIn(3000);
 };

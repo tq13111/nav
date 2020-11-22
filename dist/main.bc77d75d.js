@@ -221,15 +221,16 @@ $(function () {
   $("input").on("keypress", function (e) {
     e.stopPropagation();
   }); // 跳转时将数据保存到 localStorage
-  // window.onbeforeunload = () => {
-  //   const string = JSON.stringify(hashMap);
-  //   localStorage.setItem("x", string);
-  // };
+
+  window.onbeforeunload = function () {
+    var string = JSON.stringify(hashMap);
+    localStorage.setItem("x", string);
+  };
 });
 
 window.onload = function () {
   // 淡入淡出
-  $("body").fadeIn(2000);
+  $("body").fadeIn(3000);
 };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.33dfac75.js.map
+//# sourceMappingURL=main.bc77d75d.js.map
