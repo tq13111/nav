@@ -1,4 +1,3 @@
-$("body").hide();
 $(function () {
   const $siteList = $(".siteList");
   const $lastLi = $siteList.find("li.last");
@@ -135,7 +134,7 @@ $(function () {
     localStorage.setItem("x", string);
   };
 });
-window.onload = function () {
   // 淡入淡出
-  $("body").fadeIn(3000);
+window.onload = function () {
+  $("body").fadeTo(3000,1);
 };
