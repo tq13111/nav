@@ -119,12 +119,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"epB2":[function(require,module,exports) {
 $("body").hide();
-
-window.onload = function () {
-  // 淡入淡出
-  $("body").fadeIn(2000);
-};
-
 $(function () {
   var $siteList = $(".siteList");
   var $lastLi = $siteList.find("li.last"); // 绑定添加事件
@@ -232,5 +226,10 @@ $(function () {
   //   localStorage.setItem("x", string);
   // };
 });
+
+window.onload = function () {
+  // 淡入淡出
+  $("body").fadeIn(2000);
+};
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.68194545.js.map
+//# sourceMappingURL=main.33dfac75.js.map
