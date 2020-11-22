@@ -66,6 +66,7 @@ $(function () {
   //封装渲染函数
   const render = () => {
     $siteList.find("li:not(.last)").remove();
+    
     hashMap.forEach((node, index) => {
       let $Li;
       if (node.type === "img") {
@@ -133,8 +134,9 @@ $(function () {
     const string = JSON.stringify(hashMap);
     localStorage.setItem("x", string);
   };
+  $('.wrapper').hide()
 });
   // 淡入淡出
 window.onload = function () {
-  $("body").fadeTo(3000,1);
+  $(".wrapper").fadeIn(3000);
 };
