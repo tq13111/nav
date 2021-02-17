@@ -1,4 +1,3 @@
-// $('.wrapper').hide()
 $(function () {
   const $siteList = $(".siteList");
   const $lastLi = $siteList.find("li.last");
